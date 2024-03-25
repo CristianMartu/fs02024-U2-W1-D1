@@ -225,8 +225,16 @@ footer a {
 
 @media screen and (min-width: 769px) {
   header {
-    text-align: start;
+    display: inline-block;
+    width: 100%;
+    margin-block: auto;
   }
+  header div,
+  header div p,
+  header nav {
+    display: inline-block;
+  }
+
   table {
     width: 65%;
   }
