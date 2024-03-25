@@ -227,20 +227,24 @@ footer a {
   header {
     display: inline-block;
     width: 100%;
-    margin-block: auto;
+    text-align: start;
   }
   header div,
   header div p,
   header nav {
     display: inline-block;
+    text-align: start;
+    vertical-align: top;
+    margin-top: 3rem;
+  }
+
+  header nav {
+    margin-left: 20%;
+    margin-top: 6rem;
   }
 
   table {
     width: 65%;
-  }
-  header p {
-    display: inline-block;
-    padding-block: auto;
   }
   article h1 {
     font-size: 4rem;
