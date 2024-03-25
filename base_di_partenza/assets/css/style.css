@@ -227,8 +227,9 @@ footer a {
   header {
     display: inline-block;
     width: 100%;
-    text-align: start;
+    text-align-last: justify;
   }
+
   header div,
   header div p,
   header nav {
@@ -239,7 +240,6 @@ footer a {
   }
 
   header nav {
-    margin-left: 20%;
     margin-top: 6rem;
   }
 
@@ -254,13 +254,16 @@ footer a {
   }
   iframe {
     width: 50%;
+    height: 16rem;
     display: inline-block;
+    vertical-align: middle;
   }
   section {
     display: inline-block;
     width: 50%;
-    margin-right: -4px;
+    margin-left: -4px;
     border-radius: 12px;
+    vertical-align: middle;
   }
   aside div {
     display: inline-block;
@@ -270,5 +273,15 @@ footer a {
   footer address {
     margin-inline: auto;
     width: 47rem;
+  }
+}
+
+@media print {
+  header,
+  main iframe,
+  main section,
+  main aside,
+  footer {
+    display: none;
   }
 }
